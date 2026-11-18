@@ -1,0 +1,103 @@
+--- state transitions ---
+1.8s  EATING
+3.2s  RESTING
+7.0s  AVOIDING
+7.7s  RESTING
+14.4s  CASTING
+18.1s  FORAGING
+21.3s  EATING
+21.8s  RESTING
+27.0s  AVOIDING
+27.9s  RESTING
+32.4s  EATING
+32.5s  RESTING
+34.9s  AVOIDING
+35.6s  RESTING
+42.5s  EATING
+42.5s  RESTING
+44.9s  AVOIDING
+45.8s  RESTING
+54.6s  AVOIDING
+55.0s  RESTING
+57.7s  CASTING
+60.0s  FORAGING
+61.5s  EATING
+61.5s  RESTING
+64.2s  EATING
+64.2s  RESTING
+65.7s  AVOIDING
+67.2s  RESTING
+72.2s  AVOIDING
+73.0s  RESTING
+79.4s  CASTING
+81.6s  AVOIDING
+82.0s  CASTING
+85.2s  EATING
+85.2s  RESTING
+85.8s  EATING
+85.8s  RESTING
+87.0s  AVOIDING
+88.3s  RESTING
+100.2s  ESCAPE
+101.5s  AVOIDING
+101.8s  CASTING
+109.3s  FORAGING
+111.9s  EATING
+112.4s  RESTING
+117.0s  AVOIDING
+118.8s  RESTING
+122.7s  CASTING
+135.0s  FORAGING
+135.2s  EATING
+135.7s  RESTING
+144.4s  CASTING
+147.0s  AVOIDING
+147.6s  CASTING
+148.6s  AVOIDING
+149.5s  CASTING
+150.6s  SLEEPING
+174.5s  AVOIDING
+174.7s  EATING
+176.1s  AVOIDING
+177.5s  RESTING
+179.6s  AVOIDING
+180.1s  RESTING
+185.5s  EATING
+185.5s  RESTING
+186.3s  AVOIDING
+187.8s  RESTING
+192.1s  AVOIDING
+192.3s  RESTING
+196.8s  AVOIDING
+197.3s  RESTING
+198.6s  CASTING
+201.3s  AVOIDING
+202.1s  CASTING
+210.0s  FORAGING
+211.1s  EATING
+211.6s  RESTING
+220.2s  CASTING
+221.1s  EATING
+221.1s  RESTING
+227.0s  AVOIDING
+227.5s  RESTING
+231.1s  CASTING
+233.6s  FORAGING
+235.2s  EATING
+235.2s  RESTING
+239.8s  SLEEPING
+--- tests ---
+PASS  boots without errors
+PASS  feeding works (EATING seen)
+PASS  satiety works (RESTING seen)
+PASS  forage/search cycle (FORAGING seen)
+PASS  sleep cycle (SLEEPING seen)
+PASS  escape circuit fires on scare (ESCAPE seen)
+PASS  avoidance of danger (AVOIDING seen)
+PASS  state actually changes (>=5 distinct states)
+PASS  KC layer sparse (<25%)
+PASS  KC layer not dead (>0.5%)
+PASS  no NaN in network state
+PASS  all 139,255 real neurons loaded
+PASS  web built over the brain (>=3000 links)
+ALL TESTS PASSED
