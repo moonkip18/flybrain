@@ -60,11 +60,11 @@ Optional: rebuild the circuit from the data dumps (`python extract.py`, needs pa
 
 ## Data & citations
 
-- Data: [FlyWire FAFB v783](https://flywire.ai/) ([Dorkenwald et al., 2024, Nature](https://www.nature.com/articles/s41586-024-07986-0)), annotations [flywire_annotations v3.1.0](https://codex.flywire.ai/).
-- Mushroom-body learning architecture and DAN compartment signs: Aso et al., 2014, *eLife* ("The neuronal architecture of the mushroom body provides a logic for associative learning").
-- KC sparseness and APL feedback inhibition: Lin et al., 2014; Inada et al., 2017.
-- CO2 avoidance via the V glomerulus: Suh et al., 2004, *Nature*.
-- Giant fiber looming escape: von Reyn et al., 2014, *Current Biology*.
+- Data: [FlyWire FAFB v783](https://flywire.ai/) — Dorkenwald et al., "Neuronal wiring diagram of an adult brain", *Nature* 634 (2024), [doi:10.1038/s41586-024-07558-y](https://doi.org/10.1038/s41586-024-07558-y); neuron annotations [flywire_annotations v3.1.0](https://codex.flywire.ai/) (Schlegel et al., *Nature* 634, 2024).
+- Mushroom-body learning architecture and DAN compartment signs: Aso et al., 2014, *eLife* ("The neuronal architecture of the mushroom body provides a logic for associative learning", [doi:10.7554/eLife.04577](https://doi.org/10.7554/eLife.04577)).
+- KC sparseness: Lin et al., 2014, *Nature Neuroscience* ("Sparse, decorrelated odor coding in the mushroom body enhances learned odor discrimination", [doi:10.1038/nn.3660](https://doi.org/10.1038/nn.3660)); mushroom-body circuit processing: Inada et al., 2017, *Neuron* ([doi:10.1016/j.neuron.2017.06.039](https://doi.org/10.1016/j.neuron.2017.06.039)).
+- CO2 avoidance: Suh et al., 2004, *Nature* ("A single population of olfactory sensory neurons mediates an innate avoidance behaviour in Drosophila", [doi:10.1038/nature02980](https://doi.org/10.1038/nature02980)).
+- Giant fiber escape: von Reyn et al., 2014, *Nature Neuroscience* ("A spike-timing mechanism for action selection", [doi:10.1038/nn.3741](https://doi.org/10.1038/nn.3741)).
 
 The pipeline that built `circuit.json` lives in `load.py` (FlyWire CSV loader) and `extract.py` (subcircuit extraction); `demo.py` prints example queries against the raw connectome.
 
